@@ -1,0 +1,4 @@
+notebooks/UHI_LST_Visualization.ipynb
+notebooks/.ipynb_checkpoints/
+*.nc
+notebooks/jd_landsat_stack80.nc
