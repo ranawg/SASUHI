@@ -406,7 +406,7 @@ def resize_to_match(array, target_shape):
         resized.append(resized_img)
     return np.stack(resized, axis=0)
     
-def get_chunked_stack(image_collection, region, scale, band_names, chunk_size=30, sleep_time=10):
+def get_chunked_stack(image_collection, region, scale, band_names, chunk_size=40, sleep_time=3):
     """Download the image collection in chunks and stack them."""
     total_images = image_collection.size().getInfo()
     num_chunks = math.ceil(total_images / chunk_size)
